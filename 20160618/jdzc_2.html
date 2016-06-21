@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		body{
+			background-color:#F2F2F2;
+			font-family:"微软雅黑";
+			}
+		#container{
+			margin-left:90px;
+			}
+		span.logo{
+			font-weight:bold;
+			font-size:1.5em;
+			}
+		div#tab{
+			height:45px;
+			line-height:45px;
+			}
+		#form{
+			width:928px;
+			min-height:400px;
+			background:white;
+			height:478px;
+			position: relative;
+			}
+		span.name{
+			padding:8px 0 8px 115px;
+			}
+		input.t1{
+			margin-left:15px;
+			margin-top:32px;
+			width:230px;height:30px;
+			background-image:url(jdzc/user.jpg);
+			background-repeat:no-repeat;
+			background-position:210px 5px;
+			}
+		span.explaine{
+			padding:5px 35px 6px 5px;
+			border:1px solid #DDDDDD;
+			vertical-align:middle;
+			margin-left:5px;
+			}
+		
+
+
+		span.pw{
+			padding:8px 0 8px 115px;
+			
+			}
+		input.t2{
+			margin-left:15px;
+			margin-top:27px;
+			width:230px;height:30px;
+			background-image:url(jdzc/pwd.jpg);
+			background-repeat:no-repeat;
+			background-position:210px 5px;
+			}
+		span.explaine2{
+			padding:5px 81px 6px 5px;
+			border:1px solid #DDDDDD;
+			vertical-align:middle;
+			margin-left:5px;
+			}
+		
+
+		
+		span.mima{
+			padding:8px 0 8px 87px;
+			
+			}
+		input.t3{
+			margin-left:15px;
+			margin-top:27px;
+			width:230px;height:30px;
+			background-image:url(jdzc/pwd.jpg);
+			background-repeat:no-repeat;
+			background-position:210px 5px;
+			}
+		span.explaine3{
+			padding:5px 81px 6px 5px;
+			border:1px solid #DDDDDD;
+			vertical-align:middle;
+			margin-left:5px;
+			}
+
+		span.phone{
+			padding:8px 0 8px 103px;
+			
+			}
+		input.t4{
+			margin-left:15px;
+			margin-top:27px;
+			width:230px;height:30px;
+			background-image:url(jdzc/phone.jpg);
+			background-repeat:no-repeat;
+			background-position:210px 5px;
+			}
+		span.explaine4{
+			padding:5px 81px 6px 5px;
+			border:1px solid #DDDDDD;
+			vertical-align:middle;
+			margin-left:5px;
+			}
+
+
+		span.dx{
+			padding:8px 0 8px 88px;
+			
+			}
+		input.t5{
+			margin-left:15px;
+			margin-top:27px;
+			width:230px;height:30px;
+			background-image:url(jdzc/pwd.jpg);
+			background-repeat:no-repeat;
+			background-position:210px 5px;
+			}
+		span.explaine5{
+			padding-top:5px;
+			padding-bottom:6px;
+			border:1px solid #DDDDDD;
+			vertical-align:middle;
+			margin-left:5px;
+			}
+		.explaine,.explaine2,.explaine3,.explaine4{
+			background:#F7F7F7;
+			}
+		.explaine5{
+			background:#F4F4F4;
+			}
+		span.agree{
+			font-size:0.8em;
+			font-weight:bold;
+			}
+		div#row5{
+			padding-left:172px;
+			padding-top:36px;
+			padding-bottom:38px;
+			}
+
+		#register{
+			color:white;
+			background:#E33B3D;
+			padding:8px 85px;
+			margin-left:172px;/*如何去掉灰色边框？？*/
+			border: none;/*去掉灰色边框*/
+			margin-bottom:38px;
+			}
+		a{
+			text-decoration:none;
+			}
+		#form{
+		width:928px;
+		min-height:400px;
+		background:white;
+		height:478px;
+		position: relative;/*父元素 做position：relative*/
+		}
+		img#img{
+			position:absolute;/*不会利用相对定位做绝对定位？？？？*/
+			left:726px;
+			}
+		b{
+		 background-image:url(jdzc/xx.png);
+		 background-repeat:no-repeat;
+		 width:7px;height:10px;
+		 display:inline-block;
+		 }
+
+	</style>
+
+</head>
+<body>
+	<!-- 下面还有个很大的问题，</div>写成了<div/> !!!!!!!!!!!!-->
+  <div id="container">
+	<div id="header">
+		<img src="jdzc/jd_logo.png"  alt="" /><span class="logo">欢迎注册</span>
+	</div>
+	<div id="tab">页签部分</div>
+    <form method="post" action="4.php" id="form">
+		  <div id="row1">
+			<span class="name"><b></b>用户名：</span>
+			<input class="t1"/>
+			<span class="explaine">4-20位数字，字母。。。。。。</span>	
+		  </div>
+		  <img src="jdzc/phone.png" alt="" id="img" />
+
+		  <div id="row2">
+			<span class="pw"><b></b>密码&nbsp;&nbsp;&nbsp;&nbsp;：</span><input class="t2"/><span class="explaine2">4-20位数字。。。。。。</span>	
+		  </div>
+
+		  <div id="row3">
+			<span class="mima"><b></b>请确认密码：</span><input class="t3"/><span class="explaine3">4-20位数字。。。。。。</span>	
+		  </div>
+
+		  <div id="row4">
+			<span class="phone"><b></b>验证手机：</span><input class="t4"/><span class="explaine4">4-20位数字。。。。。。</span>	
+		  </div>
+
+		  <div id="row4">
+			<span class="dx"><b></b>短信验证码：</span><input class="t5"/><span class="explaine5">获取短信验证码</span>	
+		  </div>
+
+		  <div id="row5"> 
+		    <input type="checkbox"/> <span   class="agree">我已同意并阅读<a href="http:www.baidu.com">《协议》</a></span>
+		  </div>
+		  <input type="submit"	value="立即注册" name="register" id="register"/>
+    </form>
+	<div class="">页脚部分</div>
+  </div>	
+</body>
+</html>
+<!-- JSģ�� -->
+<!-- <script type="text/javascript">
+	window.onload=function()
+	{
+
+	}
+</script> -->
